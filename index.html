@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="header">Library Collection</h1>
+    <button class="openButton">ADD NEW BOOKS</button>
+
+    <div id="formPopUp" class="myForm">
+        <form  action="" id="form">
+            <span class="closeForm">&timesb;</span>
+            <h1>Add New Book</h1>
+            <label for="title"><b>Book Title</b></label> 
+            <input type="text" id="title" placeholder="Book Title" name="title" required> <br>
+
+            <label for="author"><b>Book Author</b></label>
+            <input type="text" id="author" placeholder="Book Author" name="author" required> <br>
+
+            <label for="pages"><b>Book Pages</b></label>
+            <input type="number" id="pages" placeholder="Total Pages" name="pages" required> <br>
+
+            <label for="releaseYear"><b>Book Published Year</b></label>
+            <input type="year" id="published_year" name="Published_year"
+            min="2021" value="2021"> <br>
+
+            <p>Have You Read The Book?</p>
+            <label class="container"><b>Yes</b>
+                <input type="radio" id="read" checked="checked" name="radio" value="yes">
+                <span class="checkmark"></span>
+            </label> 
+           
+            <label class="container"><b>No</b>
+                <input type="radio" id="read" name="radio" value="no">
+                <span class="checkmark"></span>
+            </label>     
+            <br>
+            
+
+            <button type="submit"  form="form" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <div id="library-container"></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
